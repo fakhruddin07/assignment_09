@@ -15,10 +15,13 @@ class MyApp extends StatelessWidget {
       title: 'Weather App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
+        fontFamily: "Roboto",
+        textTheme: const TextTheme(
+          headlineMedium: TextStyle(color: Colors.white, fontFamily: "Roboto"),
+          headlineSmall: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 20),
+        ),
       ),
       home: const HomePage(),
     );
   }
 }
-
